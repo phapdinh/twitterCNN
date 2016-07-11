@@ -11,17 +11,16 @@ var bot = new twit({
 })
 
 var tweets;
-bot.get('search/tweets', { q: 'water since:2011-07-11', lang: 'en', count: 3 }, function(err, data, response) {
+var params = { q: 'water since:2011-07-11', lang: 'en', count: 10 };
+bot.get('search/tweets', params, function(err, data, response) {
 	tweets = data.statuses;
 	
 	if(err) {
 		console.log('Something went wrong');
 	}
 	
-	for(var i = 0; i < tweets.length; i++) {
-		console.log(tweets[i].text);
-	}
-
+	console.log(tweets[0]);
+	
 	/* GET home page. */
 	router.get('/', function(req, res, next) {
 		res.render('index', {data: tweets});
