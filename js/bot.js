@@ -7,3 +7,6 @@ var bot = new twit({
 	access_token_secret: 'IMhPHxaO1ax7zPIwOlfsRsz8Z089fYwSatkyatswLIu9I'
 })
 
+bot.get('search/tweets', { q: 'banana since:2011-07-11', count: 100 }, function(err, data, response) {
+  console.log(data)
+})
