@@ -6,3 +6,9 @@ function loadData() {
 };
 
 $('#submit').click(loadData);
+
+function reloadPage() {
+	window.location.reload();
+}
+
+$('#reload').click(reloadPage);
