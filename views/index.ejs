@@ -11,22 +11,24 @@
 	<link href="stylesheets/style.css" rel="stylesheet">
 </head>
 <body>
-	<table class="table">
-		<thead>
-			<tr>
-				<th>
-				Tweets
-				</th>
-			</tr>
-		</thead>
-		<tbody>
-			<% for(var i=0; i < data.length; i++) { %>
+	<div class="container">
+		<table class="table">
+			<thead>
 				<tr>
-					<td><%= data[i].text %></td>
+					<th>
+					Tweets
+					</th>
 				</tr>
-			<% } %>
-		</tbody>
-	</table>
+			</thead>
+			<tbody>
+				<% for(var i=0; i < data.length; i++) { %>
+					<tr>
+						<td><%= data[i].text %></td>
+					</tr>
+				<% } %>
+			</tbody>
+		</table>
+	</div>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="javascripts/jquery.min.js"></script>
 </body>

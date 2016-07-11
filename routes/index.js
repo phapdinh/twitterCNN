@@ -12,19 +12,18 @@ var bot = new twit({
 
 var tweets;
 var params = { q: 'water since:2011-07-11', lang: 'en', count: 10 };
-bot.get('search/tweets', params, function(err, data, response) {
-	tweets = data.statuses;
+
+router.get('/', function(req, res, next) {
+	bot.get('search/tweets', params, function(err, data, response) {
+		tweets = data.statuses;
 	
-	if(err) {
-		console.log('Something went wrong');
-	}
+		if(err) {
+			console.log('Something went wrong');
+		}
 	
-	console.log(tweets[0]);
-	
-	/* GET home page. */
-	router.get('/', function(req, res, next) {
+		/* GET home page. */
 		res.render('index', {data: tweets});
-	});
-})
+	})
+});
 
 module.exports = router;
