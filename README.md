@@ -16,7 +16,7 @@ In order to run type this in the command line:
 
 npm start
 
-and then navigate this url in your browser:
+and then navigate to this url in your browser:
 
 http://localhost:3000/
 
