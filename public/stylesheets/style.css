@@ -7,7 +7,3 @@ body {
 .table thead {
   background: #ADD8E6;
 }
-
-.table tbody tr:hover {
-	background: #999999;
-}
