@@ -13,7 +13,7 @@ router.get('/', function(req, res, next) {
 		var tweets = data.statuses;
 	
 		if(err) {
-			console.log('Something went wrong');
+			console.log(err.message);
 		}
 	
 		/* GET home page. */
