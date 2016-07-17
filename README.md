@@ -1,8 +1,8 @@
-Twitter CNN
+## Twitter CNN
 
 Created a web page to display a twitter feed about tweets about water
 
-Installing
+## Installing
 
 Install these modules in command line:
 
@@ -10,7 +10,7 @@ npm install twit
 npm install ejs
 npm install express
 
-Running
+## Running
 
 In order to run type this in the command line:
 
