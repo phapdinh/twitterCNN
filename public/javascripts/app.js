@@ -5,6 +5,11 @@ function loadData() {
 };
 
 $('#submit').click(loadData);
+$('#input-field').keypress(function(e) {
+	if(e.which == 13) {
+		loadData();
+	}
+});
 
 function reloadPage() {
 	window.location.reload(true);
