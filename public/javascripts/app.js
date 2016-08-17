@@ -1,4 +1,5 @@
 var $ = require("../../bower_components/jquery/dist/jquery.min.js")
+require("../stylesheets/style.css");
 
 function loadData() {
 	var input = $('#input-field').val();
