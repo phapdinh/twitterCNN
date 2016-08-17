@@ -1,3 +1,5 @@
+var $ = require("../../bower_components/jquery/dist/jquery.min.js")
+
 function loadData() {
 	var input = $('#input-field').val();
 	var url = location.origin + '?' + $.param({q: input});
