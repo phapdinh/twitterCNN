@@ -4,11 +4,9 @@ Created a web page to display a twitter feed about tweets about water
 
 ## Installing
 
-Install these modules in command line:
+Install modules using command line:
 
-npm install twit
-npm install ejs
-npm install express
+npm install
 
 ## Running
 
