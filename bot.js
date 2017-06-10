@@ -1,3 +1,4 @@
+/* globals require, module, __dirname */
 'use strict';
 var twit = require('twit'),
     apiKeys = require('./apiKeys'),
