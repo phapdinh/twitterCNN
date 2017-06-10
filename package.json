@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "test": "jshint app.js"
+    "test": "jshint app.js; jshint bot.js"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
