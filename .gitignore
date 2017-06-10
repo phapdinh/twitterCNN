@@ -1,3 +1,4 @@
 node_modules
 bower_components
 apiKeys.json
+npm-debug.log
