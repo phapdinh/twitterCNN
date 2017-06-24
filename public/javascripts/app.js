@@ -5,7 +5,7 @@ function loadData() {
 	var input = $('#input-field').val();
 	var url = location.origin + '?' + $.param({q: input});
 	window.location.assign(url);
-};
+}
 
 $('#submit').click(loadData);
 $('#input-field').keypress(function(e) {
