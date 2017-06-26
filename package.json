@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "test": "jsonlint apiKeys.json && csslint public/stylesheets/style.css && jshint app.js bot.js public/javascripts/app.js"
+    "test": "jsonlint apiKeys.json & csslint public/stylesheets/style.css & jshint app.js bot.js public/javascripts/app.js"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
