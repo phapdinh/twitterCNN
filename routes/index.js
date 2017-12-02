@@ -9,15 +9,14 @@ router.get('/', function(req, res, next) {
 	if(newQ) {
 		params.q = newQ;
 	}
-	bot.get('search/tweets', params, function(err, data, response) {
-		var tweets = data.statuses;
-	
+	bot.get('search/tweets', params, function(err, data, response) {	
 		if(err) {
 			console.log(err.message);
+            return res.send(err.message);
 		}
 	
 		/* GET home page. */
-		res.render('index', {data: tweets});
+		res.render('index', {data: data.statuses});
 	})
 });
 
