@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "build": "webpack",
     "start": "node ./bin/www",
     "test": "jsonlint apiKeys.json & csslint public/stylesheets/style.css & jshint app.js bot.js public/javascripts/app.js"
   },
@@ -18,5 +19,10 @@
     "morgan": "~1.6.1",
     "serve-favicon": "~2.3.0",
     "twit": "^2.2.5"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.7",
+    "jshint-loader": "^0.8.4",
+    "style-loader": "^0.19.0"
   }
 }
