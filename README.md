@@ -9,7 +9,7 @@ Install modules using command line:
 npm install
 
 ## Running
-create a apiKeys.json file and put it in the root directory
+create a apiKeys.json file with your api keys in it and put it in the root directory
 
 In order to run type this in the command line:
 
